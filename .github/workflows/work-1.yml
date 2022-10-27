@@ -47,8 +47,8 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/${{ github.actor }}/nginx-1:${{ needs.tag.outputs.tag_name }},
-            ghcr.io/${{ github.actor }}/nginx-1:latest
+            ghcr.io/${{ github.actor }}/nginx-img-1:${{ needs.tag.outputs.tag_name }},
+            ghcr.io/${{ github.actor }}/nginx-img-1:latest
   deploy:
     name: 쿠버네티스 배포
     runs-on: ubuntu-latest
